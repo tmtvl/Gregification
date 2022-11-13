@@ -41,14 +41,19 @@ repositories {
         name "CraftTweaker"
         url "https://maven.blamejared.com"
     }
+    maven {
+        name "CleanroomMC"
+        url "https://maven.cleanroommc.com"
+    }
 }
 
 dependencies {
-
     // Hard-Deps
-    deobfCompile "curse.maven:gregtech-ce-unofficial-557242:3949406"
+    deobfCompile "curse.maven:gregtech-ce-unofficial-557242:4068926"
     deobfCompile "curse.maven:codechicken-lib-1-8-242818:2779848"
-    deobfCompile "curse.maven:mixin-booter-419286:3321174"
+    //deobfCompile "curse.maven:mixin-booter-419286:3321174"
+	compile files("etc/groovyscript-0.0.1.jar")
+	deobfCompile "zone.rong:mixinbooter:4.2"
 
     // Useful stuff
     deobfCompile "CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.554"
